@@ -426,6 +426,37 @@ html {
       left: 32%;
     }
   }
+  @media (max-width: 768px) {
+    .six {
+      flex-direction: column;   /* элементы один под другим */
+      align-items: center;      /* по центру */
+      text-align: center;
+    }
+
+    .image-wrapper {
+      margin: 0;
+      position: relative;
+    }
+
+    .profile-picture {
+      max-width: 250px;  /* чтобы фото не было слишком большим */
+      width: 100%;
+      height: auto;
+    }
+
+    .hat {
+      position: absolute;
+      top: -25px;       /* подгони под голову */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90px;      /* размер шапки */
+    }
+
+    .wish {
+      margin-top: 20px; /* отступ под фото */
+      max-width: 90%;
+    }
+  }
 
   @media screen and (max-width: 500px) {  
     .text-box .fake-btn {
@@ -460,6 +491,7 @@ html {
     }
 
   }
+
 
 
 
