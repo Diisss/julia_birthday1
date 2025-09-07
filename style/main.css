@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
-.five, .six, .seven, .eight, .nine {
+.five, .seven, .eight, .nine {
   min-height: 100vh; 
   display: flex;
   flex-direction: column;
@@ -16,13 +16,6 @@ html, body {
   font-size: 1.2rem;
   margin: 10px 0;
   line-height: 1.4;
-}
-
-.six .profile-picture {
-  max-width: 250px;
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
 }
 
 .wish h3 {
@@ -433,25 +426,6 @@ html {
       left: 32%;
     }
   }
-  @media screen and (max-width: 768px) {
-  .avatar-wrapper {
-    position: relative;
-    display: inline-block;
-  }
-
-  .avatar {
-    width: 180px; /* размер фото на мобилке */
-    border-radius: 50%;
-  }
-
-  .hat {
-    position: absolute;
-    top: -40px;   /* регулируешь высоту шляпы */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px; /* размер шляпы */
-  }
-}
 
   @media screen and (max-width: 500px) {  
     .text-box .fake-btn {
@@ -486,6 +460,7 @@ html {
     }
 
   }
+
 
 
 
