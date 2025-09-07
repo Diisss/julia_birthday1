@@ -51,11 +51,6 @@ html, body {
     max-width: 180px;
   }
 
-  .six .hat {
-    max-width: 80px;
-    margin-top: -20px;
-  }
-
   .wish h3 {
     font-size: 1rem;
   }
@@ -423,6 +418,10 @@ html {
   .wish h5 {
     font-size: 1rem;
   }
+  .six .hat {
+    max-width: 80px;
+    margin-top: -20px;
+  }
 }
 
   /* Media Queries */
@@ -483,4 +482,5 @@ html {
     }
 
   }
+
 
