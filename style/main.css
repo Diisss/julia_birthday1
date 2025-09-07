@@ -10,7 +10,7 @@ html, body {
 
 /* именно birthday-слайд */
 .four {
-  background: url("/Users/Dis/Desktop/juliya/img/tortik.webp") no-repeat center center;
+  background: url("img/tortik.webp") no-repeat center center;
   background-size: cover;
   width: 100%;
   min-height: 100vh;  /* только этот блок тянем на весь экран */
@@ -340,4 +340,5 @@ html {
       font-size: 1.5rem;
       font-weight: lighter;
     }
+
   }
