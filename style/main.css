@@ -21,13 +21,6 @@ html, body {
 .three p {
   font-size: 1.5rem;
 }
-
-
-/* обычные секции */
-.one, .three {
-  padding: 40px;
-}
-
 .four {
   background: url("../img/tortik.webp") no-repeat center center;
   background-size: cover; /* по умолчанию — красиво на ПК */
@@ -395,6 +388,7 @@ html {
     }
 
   }
+
 
 
 
