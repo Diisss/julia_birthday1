@@ -96,6 +96,7 @@ html, body {
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
+  overflow: hidden; /* чтобы картинка не вылезала */
 }
 
 .five-bg {
@@ -104,9 +105,18 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* растянуть фон */
-  z-index: -1;       /* убрать на задний план */
-  opacity: 0.7;      /* затемнение для читаемости текста */
+  object-fit: cover;   /* картинка заполняет блок */
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* затемнение */
+  z-index: -1;
 }
 
 .five p {
@@ -115,6 +125,7 @@ html, body {
   text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
   margin: 10px 0;
 }
+
 
 }
 h1, p {
@@ -479,7 +490,7 @@ html {
     .hat {
       position: absolute;
       top: -150px;      /* подними выше */
-      left: 50%;
+      left: 80%;
       transform: translateX(-50%);
       width: 120px;    /* если надо увеличить */
     }
@@ -524,6 +535,7 @@ html {
     }
 
   }
+
 
 
 
