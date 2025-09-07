@@ -3,6 +3,25 @@ html, body {
   padding: 0;
 }
 .one, .three {
+  min-height: 100vh;         /* растягиваем блок на весь экран */
+  display: flex;
+  flex-direction: column;    /* чтобы h1 и p шли сверху вниз */
+  justify-content: center;   /* по вертикали в центр */
+  align-items: center;       /* по горизонтали в центр */
+  text-align: center;        /* выравнивание текста */
+}
+
+.one h1 {
+  font-size: 3rem;
+  margin: 0 0 20px;
+}
+
+.one p, 
+.three p {
+  font-size: 1.5rem;
+}
+
+.one, .three {
   min-height: 100vh;          /* высота секции = высота экрана */
   display: flex;              /* включаем флекс */
   flex-direction: column;     /* элементы сверху вниз */
@@ -385,6 +404,7 @@ html {
     }
 
   }
+
 
 
 
