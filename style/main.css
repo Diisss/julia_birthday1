@@ -25,13 +25,6 @@ html, body {
   border-radius: 50%;
 }
 
-.six .hat {
-  max-width: 120px;
-  width: 30%;
-  height: auto;
-  margin-top: -40px;
-}
-
 .wish h3 {
   font-size: 1.2rem;
   margin: 15px 0 5px;
@@ -228,14 +221,6 @@ html {
     height: 350px;
     max-width: 100%;
     /* height: auto; */
-  }
-  
-  .six .hat {
-    left: 41.5%;
-    position: absolute;
-    /* transform: scale(0.1); */
-    top: -35%;
-    width: 80px;
   }
   
   .baloons img {
@@ -482,5 +467,6 @@ html {
     }
 
   }
+
 
 
