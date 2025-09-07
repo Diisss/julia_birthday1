@@ -268,25 +268,23 @@ const animationTimeline = () => {
         "+=1"
     );
 
-    // Restart Animation on click
-    const replyBtn = document.getElementById("replay");
-    replyBtn.addEventListener("click", () => {
-        tl.restart();
-    });
-    const isMobile = window.innerWidth < 600;
+const isMobile = window.innerWidth < 768;
+
 tl.staggerFrom(".idea-6 span", 0.8, {
-    scale: isMobile ? 1.5 : 3,
+    scale: isMobile ? 1.2 : 3, // вместо 1.5 → 1.2
     opacity: 0,
     rotation: 15,
     ease: Expo.easeOut,
 }, 0.2)
 .staggerTo(".idea-6 span", 0.8, {
-    scale: isMobile ? 1.5 : 3,
+    scale: isMobile ? 1.2 : 3,
     opacity: 0,
     rotation: -15,
     ease: Expo.easeOut,
 }, 0.2, "+=1.5");
 
+
 }
+
 
 
