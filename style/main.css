@@ -381,6 +381,40 @@ html {
   box-sizing: border-box;
   text-align: center;
 }
+.four {
+  background: url("../img/tortik.webp") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;   
+  justify-content: center; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text-box {
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* мобильная версия */
+@media screen and (max-width: 768px) {
+  .four {
+    min-height: 100vh;   /* фиксируем на высоту экрана */
+    align-items: center; /* центрируем по вертикали */
+    justify-content: center;
+  }
+
+  .four .text-box {
+    width: 90%;
+    max-height: 80vh;   /* ограничиваем высоту */
+    overflow-y: auto;   /* скролл, если текст не влезает */
+    padding: 15px;
+  }
+}
 
 /* На мобильных уменьшаем шрифты и размеры */
 @media screen and (max-width: 768px) {
@@ -466,6 +500,7 @@ html {
     }
 
   }
+
 
 
 
