@@ -21,14 +21,16 @@ html, body {
 /* именно birthday-слайд */
 .four {
   background: url("../img/tortik.webp") no-repeat center center;
+  background-size: cover;   /* растягиваем фон на весь экран */
   width: 100%;
-  min-height: 100vh;  /* только этот блок тянем на весь экран */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  top: 0!important;
+  top: 0 !important;
 }
+
 
 .text-box {
   background: rgba(255, 255, 255, 0.7); /* полупрозрачная подложка для текста */
@@ -375,6 +377,7 @@ html {
     }
 
   }
+
 
 
 
