@@ -104,25 +104,6 @@ html, body {
   padding: 20px;
   box-sizing: border-box;
 }
-
-/* для телефонов */
-@media screen and (max-width: 768px) {
-  .four {
-    background-size: contain; /* помещаем фото полностью */
-    background-color: #000;   /* заливаем фон, если будут пустые полосы */
-    background-position: center top; /* выравнивание картинки */
-  }
-}
-
-
-
-.text-box {
-  max-width: 800px; /* чтобы текст не растягивался на всю ширину */
-  background: rgba(255, 255, 255, 0.7); /* фон для читаемости */
-  padding: 20px;
-  border-radius: 12px;
-}
-
 h1, p {
   margin: 0;
 }
@@ -403,18 +384,22 @@ html {
 /* мобильная версия */
 @media screen and (max-width: 768px) {
   .four {
-    min-height: 100vh;   /* фиксируем на высоту экрана */
-    align-items: center; /* центрируем по вертикали */
+    min-height: 100vh;
+    align-items: center;
     justify-content: center;
+    background-size: contain; /* помещаем фото полностью */
+    background-color: #000;   /* фон вокруг */
+    background-position: center top;
   }
 
   .four .text-box {
     width: 90%;
-    max-height: 80vh;   /* ограничиваем высоту */
-    overflow-y: auto;   /* скролл, если текст не влезает */
+    max-height: 80vh;
+    overflow-y: auto;
     padding: 15px;
   }
 }
+
 
 /* На мобильных уменьшаем шрифты и размеры */
 @media screen and (max-width: 768px) {
@@ -500,6 +485,7 @@ html {
     }
 
   }
+
 
 
 
