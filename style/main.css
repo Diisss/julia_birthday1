@@ -433,7 +433,26 @@ html {
       left: 32%;
     }
   }
-  
+  @media screen and (max-width: 768px) {
+  .avatar-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .avatar {
+    width: 180px; /* размер фото на мобилке */
+    border-radius: 50%;
+  }
+
+  .hat {
+    position: absolute;
+    top: -40px;   /* регулируешь высоту шляпы */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px; /* размер шляпы */
+  }
+}
+
   @media screen and (max-width: 500px) {  
     .text-box .fake-btn {
       bottom: -38px;
@@ -467,6 +486,7 @@ html {
     }
 
   }
+
 
 
 
