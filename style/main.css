@@ -342,15 +342,7 @@ html {
     }
   }
   
-  @media screen and (max-width: 500px) {
-    .container {
-      width: 90%;
-    }
-  
-    .four .text-box {
-      width: 90%;
-    }
-  
+  @media screen and (max-width: 500px) {  
     .text-box .fake-btn {
       bottom: -38px;
       right: 5px;
@@ -383,6 +375,7 @@ html {
     }
 
   }
+
 
 
 
