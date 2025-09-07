@@ -85,6 +85,17 @@ html, body {
   padding: 20px;
   box-sizing: border-box;
 }
+.five {
+  background: url("../img/mishka.png") no-repeat center center;
+  background-size: cover; /* по умолчанию — красиво на ПК */
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;   /* выравнивание по вертикали */
+  justify-content: center; /* выравнивание по горизонтали */
+  padding: 20px;
+  box-sizing: border-box;
+}
 h1, p {
   margin: 0;
 }
@@ -492,6 +503,7 @@ html {
     }
 
   }
+
 
 
 
