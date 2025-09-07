@@ -99,8 +99,9 @@ html, body {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center;   /* выравнивание по вертикали */
+  justify-content: center; /* выравнивание по горизонтали */
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -116,10 +117,10 @@ html, body {
 
 
 .text-box {
-  background: rgba(255, 255, 255, 0.7); /* полупрозрачная подложка для текста */
-  padding: 30px;
-  border-radius: 20px;
-  max-width: 800px;
+  max-width: 800px; /* чтобы текст не растягивался на всю ширину */
+  background: rgba(255, 255, 255, 0.7); /* фон для читаемости */
+  padding: 20px;
+  border-radius: 12px;
 }
 
 h1, p {
@@ -465,6 +466,7 @@ html {
     }
 
   }
+
 
 
 
