@@ -273,7 +273,7 @@ const animationTimeline = () => {
     replyBtn.addEventListener("click", () => {
         tl.restart();
     });
-    const isMobile = window.innerWidth < 768;
+    const isMobile = window.innerWidth < 600;
 tl.staggerFrom(".idea-6 span", 0.8, {
     scale: isMobile ? 1.5 : 3,
     opacity: 0,
@@ -288,4 +288,5 @@ tl.staggerFrom(".idea-6 span", 0.8, {
 }, 0.2, "+=1.5");
 
 }
+
 
