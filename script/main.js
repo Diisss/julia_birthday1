@@ -24,6 +24,19 @@ window.addEventListener('load', () => {
 });
 
 // animation timeline
+const isMobile = window.innerWidth < 768;
+tl.staggerFrom(".idea-6 span", 0.8, {
+    scale: isMobile ? 1.5 : 3,
+    opacity: 0,
+    rotation: 15,
+    ease: Expo.easeOut,
+}, 0.2)
+.staggerTo(".idea-6 span", 0.8, {
+    scale: isMobile ? 1.5 : 3,
+    opacity: 0,
+    rotation: -15,
+    ease: Expo.easeOut,
+}, 0.2, "+=1.5");
 const animationTimeline = () => {
     // split chars that needs to be animated individually
     const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
@@ -273,4 +286,5 @@ const animationTimeline = () => {
     replyBtn.addEventListener("click", () => {
         tl.restart();
     });
+
 }
