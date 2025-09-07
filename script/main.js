@@ -244,16 +244,18 @@ const animationTimeline = () => {
         "party"
     )
     .staggerTo(
-        ".eight svg",
-        1.5, {
-            visibility: "visible",
-            opacity: 0,
-            scale: 80,
-            repeat: 3,
-            repeatDelay: 1.4,
-        },
-        0.3
+      ".eight svg",
+      3, // стало в 2 раза медленнее
+      {
+        visibility: "visible",
+        opacity: 0,
+        scale: 80,
+        repeat: 3,
+        repeatDelay: 2.5, // пауза подлиннее
+      },
+      0.5 // увеличил интервал между svg
     )
+
     .to(".six", 0.5, {
         opacity: 0,
         y: 30,
@@ -285,6 +287,7 @@ tl.staggerFrom(".idea-6 span", 0.8, {
 
 
 }
+
 
 
 
