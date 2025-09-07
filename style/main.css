@@ -86,27 +86,36 @@ html, body {
   box-sizing: border-box;
 }
 .five {
-    position: relative;
-    background: url("../img/mishka.png") no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    min-height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-    display: flex;
-    flex-direction: column; /* текст идет столбиком */
-    align-items: center;    /* по центру */
-    justify-content: center;/* по вертикали тоже по центру */
-    text-align: center;     /* текст по центру */
-  }
+.five-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* растянуть фон */
+  z-index: -1;       /* убрать на задний план */
+  opacity: 0.7;      /* затемнение для читаемости текста */
+}
 
-  .five p {
-    color: #fff;              /* белый текст, чтобы читался */
-    font-weight: 600;         /* пожирнее */
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.7); /* тень для контраста */
-    margin: 10px 0;
-  }
+.five p {
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  margin: 10px 0;
+}
+
 }
 h1, p {
   margin: 0;
@@ -515,6 +524,7 @@ html {
     }
 
   }
+
 
 
 
