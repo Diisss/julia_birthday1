@@ -65,7 +65,7 @@ html, body {
   }
 
   .seven .baloons img {
-    max-width: 40px;
+    max-width: 100px;
   }
 
   .eight svg {
@@ -465,6 +465,7 @@ html {
     }
 
   }
+
 
 
 
