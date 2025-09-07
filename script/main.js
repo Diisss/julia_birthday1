@@ -245,16 +245,18 @@ const animationTimeline = () => {
     )
     .staggerTo(
       ".eight svg",
-      3, // стало в 2 раза медленнее
+      3, // каждая анимация длится дольше = плавнее
       {
         visibility: "visible",
         opacity: 0,
         scale: 80,
-        repeat: 3,
-        repeatDelay: 2.5, // пауза подлиннее
+        repeat: 0,       // один раз взрывается
+        repeatDelay: 0,  // без повторов
+        ease: Power2.easeOut // плавное затухание
       },
-      0.5 // увеличил интервал между svg
+      1.2 // интервал между стартом каждой svg-анимации
     )
+
 
     .to(".six", 0.5, {
         opacity: 0,
@@ -287,6 +289,7 @@ tl.staggerFrom(".idea-6 span", 0.8, {
 
 
 }
+
 
 
 
