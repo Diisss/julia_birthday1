@@ -3,12 +3,13 @@ html, body {
   padding: 0;
 }
 .one, .three {
-  min-height: 100vh;         /* растягиваем блок на весь экран */
+  min-height: 100vh;       /* блок на весь экран */
   display: flex;
-  flex-direction: column;    /* чтобы h1 и p шли сверху вниз */
-  justify-content: center;   /* по вертикали в центр */
-  align-items: center;       /* по горизонтали в центр */
-  text-align: center;        /* выравнивание текста */
+  flex-direction: column;
+  justify-content: flex-start;  /* текст уходит вверх */
+  align-items: center;          /* по горизонтали по центру */
+  text-align: center;
+  padding-top: 50px;            /* отступ сверху */
 }
 
 .one h1 {
@@ -21,16 +22,6 @@ html, body {
   font-size: 1.5rem;
 }
 
-.one, .three {
-  min-height: 100vh;          /* высота секции = высота экрана */
-  display: flex;              /* включаем флекс */
-  flex-direction: column;     /* элементы сверху вниз */
-  align-items: center;        /* по центру по горизонтали */
-  justify-content: center;    /* по центру по вертикали */
-  text-align: center;         /* выравнивание текста */
-  padding: 20px;
-  box-sizing: border-box;
-}
 
 /* обычные секции */
 .one, .three {
@@ -404,6 +395,7 @@ html {
     }
 
   }
+
 
 
 
