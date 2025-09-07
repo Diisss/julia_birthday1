@@ -86,33 +86,54 @@ html, body {
   box-sizing: border-box;
 }
 
-.five {
-  position: relative;
-  width: 100%;
-  text-align: center;
+@media (max-width: 768px) {
+  .five {
+    position: relative;
+    width: 100vw;
+    height: 100vh; /* чтобы блок занял весь экран */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  /* сама картинка фона */
+  .five .five-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* растягивает на весь экран */
+    z-index: 0;
+  }
+
+  /* затемнение поверх фото */
+  .five .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+    z-index: 1;
+  }
+
+  /* текст над фото */
+  .five p {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+    margin: 8px 0;
+    font-weight: 600;
+  }
 }
 
-.five-bg {
-  width: 100%;         /* растягиваем на ширину экрана */
-  height: auto;        /* сохраняем пропорции */
-  display: block;
-}
-
-.five-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* текст по вертикали по центру */
-  align-items: center;
-  color: #fff;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-  padding: 20px;
-  box-sizing: border-box;
-}
 
 
 h1, p {
@@ -522,6 +543,7 @@ html {
     }
 
   }
+
 
 
 
