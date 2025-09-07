@@ -12,12 +12,6 @@ html, body {
   padding: 20px;
   box-sizing: border-box;
 }
-.idea-6 span {
-  display: inline-block;
-  max-width: 90vw;  /* не шире экрана */
-  word-wrap: break-word;
-  font-size: clamp(1rem, 5vw, 2.5rem); /* адаптивный размер */
-}
 .five p {
   font-size: 1.2rem;
   margin: 10px 0;
@@ -399,6 +393,12 @@ html {
   .idea-6 span {
     font-size: 5rem;  /* уменьшаем огромные буквы */
   }
+  .idea-6 span {
+  display: inline-block;
+  max-width: 90vw;  /* не шире экрана */
+  word-wrap: break-word;
+  font-size: clamp(1rem, 5vw, 2.5rem); /* адаптивный размер */
+  }
   .wish-hbd {
     font-size: 1.8rem;
   }
@@ -465,6 +465,7 @@ html {
     }
 
   }
+
 
 
 
