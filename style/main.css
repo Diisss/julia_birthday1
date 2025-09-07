@@ -446,11 +446,12 @@ html {
 
     .hat {
       position: absolute;
-      top: -25px;       /* подгони под голову */
+      top: -60px;      /* подними выше */
       left: 50%;
       transform: translateX(-50%);
-      width: 90px;      /* размер шапки */
+      width: 120px;    /* если надо увеличить */
     }
+
 
     .wish {
       margin-top: 20px; /* отступ под фото */
@@ -491,6 +492,7 @@ html {
     }
 
   }
+
 
 
 
