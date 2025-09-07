@@ -276,7 +276,38 @@ html {
     cursor: pointer;
     z-index: 3;
   }
-  
+  /* Чтобы каждая секция была на весь экран телефона */
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
+  width: 100%;
+  min-height: 100vh;       /* экран по высоте устройства */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;           /* меньше отступов на телефонах */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* На мобильных уменьшаем шрифты и размеры */
+@media screen and (max-width: 768px) {
+  .one { font-size: 2.5rem; }
+  .two { font-size: 1rem; }
+  .three { font-size: 2rem; }
+  .four .text-box {
+    width: 95%;
+    padding: 15px;
+  }
+  .idea-6 span {
+    font-size: 5rem;  /* уменьшаем огромные буквы */
+  }
+  .wish-hbd {
+    font-size: 1.8rem;
+  }
+  .wish h5 {
+    font-size: 1rem;
+  }
+}
+
   /* Media Queries */
   @media screen and (max-height: 1000px) {
     .six .hat {
@@ -343,5 +374,6 @@ html {
     }
 
   }
+
 
 
