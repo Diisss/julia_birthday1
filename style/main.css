@@ -18,18 +18,26 @@ html, body {
   padding: 40px;
 }
 
-/* именно birthday-слайд */
 .four {
   background: url("../img/tortik.webp") no-repeat center center;
-  background-size: cover;   /* растягиваем фон на весь экран */
+  background-size: cover; /* по умолчанию — красиво на ПК */
   width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  top: 0 !important;
 }
+
+/* для телефонов */
+@media screen and (max-width: 768px) {
+  .four {
+    background-size: contain; /* помещаем фото полностью */
+    background-color: #000;   /* заливаем фон, если будут пустые полосы */
+    background-position: center top; /* выравнивание картинки */
+  }
+}
+
 
 
 .text-box {
@@ -377,6 +385,7 @@ html {
     }
 
   }
+
 
 
 
