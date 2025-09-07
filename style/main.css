@@ -18,6 +18,7 @@ html, body {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  top: 0!important;
 }
 
 .text-box {
@@ -342,4 +343,5 @@ html {
     }
 
   }
+
 
